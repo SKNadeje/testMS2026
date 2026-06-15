@@ -1,0 +1,11 @@
+name: Muj prvni run
+
+on: [push]          # spustí se při každém pushnutí
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vypsat zpravu
+        run: echo "Ahoj, tohle je muj prvni run!"
